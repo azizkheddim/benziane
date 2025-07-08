@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>التطوع - حي بن زيان</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <!-- نفس هيدر الصفحة الرئيسية -->
+        <a href="../index.html" class="back-btn">← الرجوع</a>
+    </header>
+
+    <main class="container">
+        <h1>سجل كمتطوع في الحي</h1>
+        
+        <div class="volunteer-info">
+            <p>انضم إلى فريق متطوعي الحي وساهم في تنمية مجتمعك</p>
+        </div>
+        
+        <form id="volunteer-form">
+            <!-- نفس حقول الشكوى مع إضافة -->
+            <div class="form-group">
+                <label>المهارات:</label>
+                <div class="skills-checkbox">
+                    <label><input type="checkbox" name="skills" value="teaching"> تدريس</label>
+                    <label><input type="checkbox" name="skills" value="medical"> إسعافات أولية</label>
+                    <label><input type="checkbox" name="skills" value="tech"> تقنية معلومات</label>
+                </div>
+            </div>
+            
+            <button type="submit">تسجيل</button>
+        </form>
+    </main>
+
+    <script src="../js/volunteer.js"></script>
+</body>
+</html>
 
