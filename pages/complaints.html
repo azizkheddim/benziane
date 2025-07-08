@@ -4,35 +4,46 @@
     <meta charset="UTF-8">
     <title>تقديم شكوى - حي بن زيان</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .complaint-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- نفس هيدر الصفحة الرئيسية -->
-        <a href="../index.html" class="back-btn">← الرجوع</a>
+        <a href="../index.html" class="back-btn">← الرئيسية</a>
+        <h1>تقديم شكوى جديدة</h1>
     </header>
 
-    <main class="container">
-        <h1>نموذج تقديم شكوى</h1>
-        
-        <form id="complaint-form">
+    <main>
+        <form class="complaint-form" id="complaintForm">
             <div class="form-group">
-                <label for="name">الاسم الكامل:</label>
-                <input type="text" id="name" required>
+                <label for="fullName">الاسم الكامل:</label>
+                <input type="text" id="fullName" required>
             </div>
             
             <div class="form-group">
-                <label for="type">نوع الشكوى:</label>
-                <select id="type" required>
+                <label for="complaintType">نوع الشكوى:</label>
+                <select id="complaintType" required>
                     <option value="">اختر نوع الشكوى...</option>
                     <option value="electricity">كهرباء</option>
                     <option value="water">مياه</option>
-                    <option value="cleanliness">نظافة</option>
+                    <option value="sanitation">نظافة</option>
                 </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="details">تفاصيل الشكوى:</label>
-                <textarea id="details" required></textarea>
             </div>
             
             <button type="submit">إرسال الشكوى</button>
