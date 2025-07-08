@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>قائمة الشكاوى - حي بن زيان</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .admin-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .admin-table th {
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+        }
+        .status-badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .pending { background: #f39c12; }
+        .resolved { background: #2ecc71; }
+    </style>
+</head>
+<body onload="checkAuth()">
+    <div class="admin-header">
+        <h1>قائمة الشكاوى المقدمة</h1>
+        <a href="dashboard.html">← العودة للوحة التحكم</a>
+    </div>
 
+    <div class="admin-container">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>رقم</th>
+                    <th>الاسم</th>
+                    <th>النوع</th>
+                    <th>الحالة</th>
+                    <th>الإجراءات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>أحمد محمد</td>
+                    <td>كهرباء</td>
+                    <td><span class="status-badge pending">قيد المعالجة</span></td>
+                    <td>
+                        <button onclick="resolveComplaint(1001)">تم الحل</button>
+                        <button onclick="deleteComplaint(1001)">حذف</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../../js/auth.js"></script>
+    <script src="../../js/admin-complaints.js"></script>
+</body>
+</html>
