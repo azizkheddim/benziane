@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حي بن زيان - وادي رهيو</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.jpg" alt="شعار حي بن زيان" class="logo">
+            <div class="title-container">
+                <h1>حي بن زيان</h1>
+                <p class="motto">الطريق نحو التغذية بين حياة عمل</p>
+                <p class="date-badge">
+                    <img src="images/date-badge.jpg" alt="تاريخ التأسيس 1962">
+                </p>
+            </div>
+        </div>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="#" class="active">الرئيسية</a></li>
+            <li><a href="pages/news.html">أخبار الحي</a></li>
+            <li><a href="pages/complaints.html">تقديم شكوى</a></li>
+            <li><a href="pages/volunteer.html">التطوع</a></li>
+            <li><button onclick="adminLogin()">الدخول الإداري</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="emergency-alerts">
+            <h2>🚨 تنبيهات عاجلة</h2>
+            <div class="alert">
+                <p>انقطاع المياه يوم الخميس القادم من 8 صباحاً حتى 12 ظهراً</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
