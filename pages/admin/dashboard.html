@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة التحكم - حي بن زيان</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .stats-card {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body onload="checkAuth()">
+    <header class="admin-header">
+        <h1>لوحة التحكم الإدارية</h1>
+        <button onclick="logout()">تسجيل الخروج</button>
+    </header>
 
+    <main class="admin-container">
+        <div class="stats-card">
+            <h3>الشكاوى المعلقة: <span id="pending-complaints">12</span></h3>
+        </div>
+        
+        <div class="stats-card">
+            <h3>المتطوعون المسجلون: <span id="volunteers-count">25</span></h3>
+        </div>
+        
+        <div class="admin-actions">
+            <a href="complaints-list.html" class="admin-btn">إدارة الشكاوى</a>
+            <a href="volunteers-list.html" class="admin-btn">إدارة المتطوعين</a>
+        </div>
+    </main>
+
+    <script src="../../js/auth.js"></script>
+    <script src="../../js/admin.js"></script>
+</body>
+</html>
